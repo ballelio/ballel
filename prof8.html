@@ -1,0 +1,370 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Liliana Ballesteros — Graphic Designer</title>
+<link rel="stylesheet" href="ballel.css">
+
+<style>
+body{background-color:white;}
+.start{margin-top: 40px;}
+#blurb{margin-top: -10px;
+padding-right: 5px;
+font-size: 1.20em;
+      position:absolute; 
+      width: 160px; 
+      float: left;
+      z-index: 9;
+      margin-bottom: 20px;}
+
+.description{font-family: 'Cardo', serif; 
+    font-weight: 400;
+    font-size:1em;
+    line-height: 1.25em;
+    margin-top: 100px;
+    width: 150px; 
+  z-index: 9;}
+
+.type{width:344px;
+      font-family: 'Quattrocento Sans', sans-serif;
+      font-weight: 400;
+      font-size: 1.15em;
+      background-color:#000000;
+      margin-top: 30px;
+      margin-bottom: 5px;
+      padding-top: 5px;
+      padding-bottom:5px;
+    text-align:left;}
+
+.type a{margin-right:30px;
+        margin-left: 15px;
+        color:white;}
+
+.type a:hover{ color:white;}  
+
+.next{float: right;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 700;
+  font-size: .95em;}
+
+.next a {margin-left: 1px;
+background-color:#e6e6e6;
+padding:4px 10px 4px 10px;}  
+
+.sig{font-size: 1.5em;
+    vertical-align:-1px;
+    font-weight: 400;}
+
+.carousel-wrapper {width: %;
+  position:absolute;
+  margin-top:170px;
+  top: 25px;
+left:230px;
+right: 80px;
+z-index:1;}
+
+  .carousel-item {
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    background-position: top left;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    clear: both;
+    background-size:contain;}
+
+            /*.item-2 (text){
+            background-color:orange;
+            margin: 0 auto;
+            clear: both;
+           padding:5%;
+            }
+                <h2>Item 2</h2>
+    <p>Content goes here.</p>*/
+
+         .item-1 {
+            background-image: url("UGAdmissionTravelPiece1.jpg");}
+
+         .item-2 {
+            background-image: url("UGAdmissionTravelPiece2.jpg");}
+
+         .item-3 {
+            background-image: url("UGAdmissionTravelPiece3.jpg");}
+
+         .item-4 {
+            background-image: url("UGAdmissionTravelPiece4.jpg");}
+
+         .item-5 {
+            background-image: url("");}
+
+     .arrow {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 5%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: url("carousel-arrow-light.png") 50% 50% / 15px no-repeat;}
+
+    .arrow-prev {
+      margin-left: -10px;
+        left:0px;}
+
+    .arrow-next {
+        margin-right:-10px;
+        right:0;
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);}
+
+    .light {
+      color: white;}
+
+  [id^="target-item"] {
+    display:none;
+  }
+
+  .item-1 {
+    z-index: 2;
+    opacity: 1;
+  }
+
+  *:target ~ .item-1 {
+    opacity: 0;
+  }
+
+  #target-item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+  #target-item-2:target ~ .item-2, #target-item-3:target ~ .item-3, #target-item-4:target ~ .item-4, #target-item-5:target ~ .item-5 {
+    z-index: 3;
+    opacity: 1;
+ 
+  }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) { 
+
+.type{width:100%;
+      font-size: 1.75em;
+      background-color:#000000;
+      margin-top: 80px;
+      padding-top: 5px;
+      padding-bottom:5px;
+      margin-bottom: 0px;}
+
+.type a{margin-right:75px;
+        margin-left: 15px;}      
+
+h3.start{width: 100%; 
+  font-size: 3em;
+  line-height: 1em;
+margin-top: 15px;}
+
+#blurb{margin-top:650px;
+      width: 80%; 
+      font-size: 2.75em;
+    }
+
+.description{margin-top:770px;
+  font-size:2.5em;
+     width:100%; }
+
+.carousel-wrapper {
+  top: 210px;
+  left:50px;
+right: 50px;}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 80%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: url("carousel-arrow-light.png") 50% 50% / 25px no-repeat;}
+   
+    .arrow-prev {
+      margin-left: -20px;
+        left:0px; }
+
+    .arrow-next {
+        margin-right:-20px;
+        right:0;
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);}
+
+ .next{margin-top: 710px;
+  font-size: 2em;
+  margin-bottom:20px;
+z-index: 1;}
+
+.next a {margin-left: 1px;
+background-color:#e6e6e6;
+padding:4px 10px 4px 10px;}  
+
+.sig{font-size: 1.5em;
+    vertical-align:-1px;
+    font-weight: 400;}               
+ }
+
+/* ipad Mini Portrait and landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+
+.type{width:100%;
+      font-size: 1.75em;
+      background-color:#000000;
+      margin-top: 80px;
+      padding-top: 5px;
+      padding-bottom:5px;}
+
+.type a{margin-right:75px;
+        margin-left: 15px;}      
+
+h3.start{width: 100%; 
+  font-size: 3.25em;
+  line-height: .9em;
+margin-top: 10px;
+orphans: 0;
+word-spacing:0;}
+
+
+#blurb{margin-top: 640px;
+      width: 80%; 
+      font-size:2.5em;}
+
+.description{margin-top: 765px;
+  font-size:2.25em;
+width: 80%; }
+
+.carousel-wrapper {
+  top: 160px;
+  left:45px;
+right: 45px;}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 90%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: url("carousel-arrow-light.png") 50% 50% / 25px no-repeat;}
+   
+    .arrow-prev {
+      margin-left: -20px;
+        left:0px; }
+
+    .arrow-next {
+        margin-right:-20px;
+        right:0;
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);}
+
+ .next{margin-top: 685px;
+  font-size: 2em;
+  bottom:5px;}
+
+.next a {margin-left: 1px;
+background-color:#e6e6e6;
+padding:4px 10px 4px 10px;}  
+
+.sig{font-size: 1.5em;
+    vertical-align:-1px;
+    font-weight: 400;}                 
+}          
+
+</style>
+
+<link href='http://fonts.googleapis.com/css?family=Abril+Fatface|Quattrocento+Sans:400,700|Cardo' rel='stylesheet' type='text/css'>
+</head >
+<header>
+<hgroup>
+<h1><a href="index.html">Liliana Ballesteros</a></h1>
+</hgroup>
+<section>
+<nav>
+<ul>
+<li><a href="index.html">My Work</a></li>
+<li><a href="aboutme.html">About Me</a></li>
+</ul>
+</nav>
+</section>
+<div>
+<hr class='rule' align="left" size="1"  color="black">
+</div>
+</header>
+
+
+<body>
+<section>
+<div class="type">
+<a href="prof.html">Professional</a>
+<a href="stu.html">Student</a>
+<a href="side.html">Side</a>
+</div>
+</section>
+
+<div class="next">
+<a href="prof7.html"><span class="sig"><</span> Previous Project</a>
+<a href="prof9.html">Next Project <span class="sig">></span></a>
+</div>
+<article>
+<h3 class="start">Professional Work</h3>
+<p id="blurb">Undergrad Admission Travel Piece</p>
+<p class="description">A compact version of the Admission viewbook, this piece was designed for admission officials who travel to student fairs and recruit students on the road.</p>
+</article>
+
+<article>
+<div class="carousel-wrapper" style="height:620px;">
+
+  <span id="target-item-1"></span>
+  <span id="target-item-2"></span>
+  <span id="target-item-3"></span>
+  <span id="target-item-4"></span>
+
+
+  <div class="carousel-item item-1 light">
+
+    <a class="arrow arrow-prev" href="#target-item-4"></a>
+    <a class="arrow arrow-next" href="#target-item-2"></a>
+  </div>
+  <div class="carousel-item item-2 light">
+    <a class="arrow arrow-prev" href="#target-item-1"></a>
+    <a class="arrow arrow-next" href="#target-item-3"></a>
+  </div>
+  <div class="carousel-item item-3 light">
+    <p></p>
+    <a class="arrow arrow-prev" href="#target-item-2"></a>
+    <a class="arrow arrow-next" href="#target-item-4"></a>
+  </div>
+    <div class="carousel-item item-4 light">
+    <p></p>
+    <a class="arrow arrow-prev" href="#target-item-3"></a>
+    <a class="arrow arrow-next" href="#target-item-1"></a>
+  </div>
+  </div>
+</article>
+ 
+
+<footer>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67541586-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</section>
+</body>
+</html>

@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* CSS Document */
+<style>
+header{}
+h1{font-family: 'Quattrocento Sans', sans-serif;
+		font-weight: 700; 
+		font-size:2.25em; 
+		margin-bottom: -10px;
+		margin-top:20px; 
+		padding-top: 0px;}
+
+.rule hr{position: relative; 
+		z-index:10; }
+
+h2{font-family: 'Quattrocento Sans', sans-serif; 
+		font-weight:700;
+		text-align:left; 
+		font-size: 2em;
+		}
+
+h3 {font-family: 'Quattrocento Sans', sans-serif; 
+		font-weight:400;
+		font-size: 1.6em;
+		}
+
+body{text-align:left; 
+		margin-right:60px; 
+		margin-left:60px;
+		padding-right:20px; 
+		padding-left:20px;}
+
+p{font-family: 'Cardo', sans-serif; 
+		font-weight: 400;
+		font-size: 1.5em;
+		color: #4c4c4c; 
+		line-height: 1.75em;}
+
+nav {font-family: 'Quattrocento Sans', sans-serif; 
+		font-weight: 700;
+		font-size: 1.15em;
+		margin-bottom: -5px;
+		}
+nav ul {margin: 0px; 
+		float: left; 
+		list-style-type:none;
+		position:absolute; 
+		right: 80px;   
+		padding-top: 15px;
+		}
+
+nav li{float:left; 
+		margin-left:35px; 
+		margin-right: 0px; 
+		position:relative;
+		}
+
+a:link {text-decoration: none; 
+		color:#000000;}
+a:visited {text-decoration:none; 
+		color:#000000;}
+a:hover {text-decoration: none; 
+		color:#000000;}
+a:active {text-decoration: none; 
+		color:#000000;}
+h1 a:hover {text-decoration; 
+		color:black;}
+
+
+  /*body*/		
+
+#blurb{ margin-top:80px;
+		margin-right: 100px;
+		line-height: 1.15em;}
+
+.description{font-family: 'Cardo', serif; 
+    font-weight: 400;
+    font-size:1.25em;
+    line-height: 1.25em;
+	padding-right: 20%; 
+		margin-top:10px;}
+
+
+.footercontact p{font-family: 'Quattrocento Sans', sans-serif; 
+		font-weight:400; margin-top: 10px;
+		font-size:.85em; 
+		margin-bottom: 15px;
+		margin-right: 0px;}
+
+ @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+
+ h1{font-size:4.5em; 
+		margin-bottom: 10px;  } 
+
+p{font-size: 2.25em;
+	line-height: 1.75em;}
+
+h2{font-size:3.5em; }	
+
+h3{font-size:2.75em; }		
+
+nav {font-size: 2.75em;
+	margin-top: 15px;
+	margin-bottom: 20px;}
+
+nav li{margin-left:55px;}}
+
+/* ipad Mini Portrait and landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+h1{font-size:3.75em;
+		margin-bottom: -10px;  } 
+
+h2{font-size:3em; }	
+
+h3{font-size:2.5em; }		
+
+nav {font-size: 2.25em;
+	margin-top: 15px;
+	margin-bottom: 20px;}
+
+nav li{margin-left:55px;}
+
+p{font-size: 2.25em;
+	line-height: 1.75em}}
+
+</style>
+
